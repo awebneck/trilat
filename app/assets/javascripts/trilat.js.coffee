@@ -34,6 +34,21 @@ $ ->
         "stroke-dasharray": "5"
         stroke: "black"
         fill: "none"
+      svg.line p1[0], p1[1], p[0], p[1],
+        "stroke-width": 1
+        "stroke-dasharray": "10"
+        stroke: "red"
+        fill: "none"
+      svg.line p2[0], p2[1], p[0], p[1],
+        "stroke-width": 1
+        "stroke-dasharray": "10"
+        stroke: "red"
+        fill: "none"
+      svg.line p3[0], p3[1], p[0], p[1],
+        "stroke-width": 1
+        "stroke-dasharray": "10"
+        stroke: "red"
+        fill: "none"
       d = Math.sqrt(Math.pow(p2[0]-p1[0], 2) + Math.pow(p2[1]-p1[1], 2))
       ex = [(p2[0]-p1[0])/d, (p2[1]-p1[1])/d]
       i = ex[0] * (p3[0]-p1[0]) + ex[1] * (p3[1]-p1[1])
