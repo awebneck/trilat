@@ -21,14 +21,17 @@ $ ->
       d3 = Math.sqrt(Math.pow(p3[0]-p[0], 2) + Math.pow(p3[1]-p[1], 2))
       svg.circle p1[0], p1[1], d1,
         "stroke-width": 1
+        "stroke-dasharray": "5"
         stroke: "black"
         fill: "none"
       svg.circle p2[0], p2[1], d2,
         "stroke-width": 1
+        "stroke-dasharray": "5"
         stroke: "black"
         fill: "none"
       svg.circle p3[0], p3[1], d3,
         "stroke-width": 1
+        "stroke-dasharray": "5"
         stroke: "black"
         fill: "none"
       d = Math.sqrt(Math.pow(p2[0]-p1[0], 2) + Math.pow(p2[1]-p1[1], 2))
